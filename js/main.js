@@ -1,7 +1,7 @@
 const CHARACTER_CONFIG = {
   vespekta: {
     title: "Vespekta",
-    titleLine: 'The "Arcanist"',
+    titleLine: "Die Arkanistin",
     eyebrow: "Falscher Titel, echte Felmacht",
     audioLabel: "What They See",
     audioSource: "What They See.ogg",
@@ -11,7 +11,7 @@ const CHARACTER_CONFIG = {
       {
         id: "prolog",
         nav: "Prolog",
-        title: 'Vespekta, The "Arcanist"',
+        title: "Vespekta, Die Arkanistin",
         background: "vespekta_Prolog.png",
         paragraphs: [
           "Auf den ersten Blick klingt der Titel nach Disziplin, Berechnung und geordnetem Wissen. Nach einer Frau, die das Arkane seziert, benennt und bis ins letzte Detail beherrscht.",
