@@ -239,7 +239,7 @@ function setSectionBackground(imagePath) {
     return;
   }
 
-  inactiveBackgroundLayer.style.backgroundImage = `linear-gradient(180deg, rgba(4, 6, 10, 0.4), rgba(4, 6, 10, 0.72)), url("${imagePath}")`;
+  inactiveBackgroundLayer.style.backgroundImage = `linear-gradient(180deg, rgba(4, 6, 10, 0.28), rgba(4, 6, 10, 0.28)), url("${imagePath}")`;
   inactiveBackgroundLayer.classList.add("is-active");
   activeBackgroundLayer.classList.remove("is-active");
 

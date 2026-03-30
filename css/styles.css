@@ -124,12 +124,7 @@ body[data-character="riff"] {
 .selection-backdrop {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(4, 8, 8, 0.78), rgba(7, 8, 10, 0.3) 42%, rgba(12, 5, 7, 0.34) 58%, rgba(10, 5, 6, 0.8)),
-    radial-gradient(circle at 20% 25%, rgba(255, 255, 255, 0.12), transparent 24%),
-    radial-gradient(circle at 78% 65%, rgba(255, 255, 255, 0.09), transparent 18%),
-    linear-gradient(90deg, rgba(101, 255, 146, 0.06), transparent 46%, rgba(202, 59, 71, 0.08)),
-    url("../selection.png");
+  background-image: url("../selection.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,9 +173,7 @@ body[data-character="riff"] {
 
 .selection-panel-vespekta .selection-choice:hover,
 .selection-panel-vespekta .selection-choice:focus-visible {
-  background:
-    linear-gradient(180deg, rgba(12, 24, 17, 0.18), rgba(9, 23, 14, 0.7)),
-    radial-gradient(circle at 35% 30%, rgba(101, 255, 146, 0.2), transparent 25%);
+  background: transparent;
 }
 
 .selection-panel-riff .selection-choice {
@@ -190,9 +183,7 @@ body[data-character="riff"] {
 
 .selection-panel-riff .selection-choice:hover,
 .selection-panel-riff .selection-choice:focus-visible {
-  background:
-    linear-gradient(180deg, rgba(29, 10, 14, 0.12), rgba(37, 10, 14, 0.72)),
-    radial-gradient(circle at 72% 35%, rgba(202, 59, 71, 0.2), transparent 24%);
+  background: transparent;
 }
 
 .selection-choice:hover,
@@ -251,7 +242,7 @@ body[data-character="riff"] {
 }
 
 .page-background-layer.is-active {
-  opacity: 0.42;
+  opacity: 1;
 }
 
 .page-aurora {
