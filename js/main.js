@@ -45,44 +45,44 @@ const CHARACTER_CONFIG = {
   },
   demetria: {
     title: "Demetria",
-    titleLine: "Die dritte Stimme",
-    eyebrow: "Neu im Reigen, bewusst in der Mitte",
+    titleLine: "Die Schweigende mit dem klaren Blick",
+    eyebrow: "Zwischen Haltung, Distanz und dem, was nie laut werden muss",
     audioLabel: "Musik",
     audioSource: "What They See.ogg",
     subtitle:
-      "Demetria steht jetzt als dritte Figur zwischen Vespekta und Riff und bekommt dieselbe erzählerische Bühne mit drei Reitern.",
+      "Demetria wirkt nicht wie ein Zwischenraum, sondern wie ein stiller Mittelpunkt. Ihre Präsenz entsteht nicht aus Lautstärke, sondern aus Kontrolle, Präzision und dem Eindruck, dass sie immer einen Gedanken weiter ist.",
     sections: [
       {
         id: "prolog",
         nav: "Prolog",
-        title: "Demetria, die dritte Stimme",
+        title: "Demetria, die Schweigende mit dem klaren Blick",
         background: "selection.png",
         paragraphs: [
-          "Demetria ist jetzt als eigener Einstieg gesetzt. Die Seite behandelt sie nicht mehr als Lücke zwischen zwei bestehenden Figuren, sondern als vollwertige dritte Präsenz.",
-          "Der Aufbau folgt bewusst demselben Rhythmus wie bei Vespekta und Riff: ein Prolog, ein Blick auf die sichtbare Rolle und ein dritter Reiter für das, was darunter liegt.",
-          "Solange du mir ihre finalen Assets und Texte gibst, bleibt diese Version ein sauberes Gerüst, das sich sofort weiter ausbauen lässt."
+          "Demetria betritt keinen Raum, um ihn an sich zu reißen. Sie genügt sich darin, anwesend zu sein, bis andere von selbst vorsichtiger sprechen, gerader stehen oder ihre Worte neu ordnen.",
+          "Gerade darin liegt ihre Wirkung. Sie wirkt nicht dramatisch, nicht überladen, nicht bemüht geheimnisvoll. Alles an ihr deutet eher auf Disziplin als auf Inszenierung, eher auf Beobachtung als auf Bedürfnis nach Aufmerksamkeit.",
+          "Und doch bleibt nach dem ersten Eindruck sofort die Frage, was an ihr eigentlich so schwer zu greifen ist. Vielleicht, weil Demetria nie mehr zeigt, als sie im jeweiligen Moment zeigen will."
         ]
       },
       {
         id: "second",
-        nav: "Die Rolle",
-        title: "Was man zuerst von Demetria liest",
+        nav: "Die Haltung",
+        title: "Was andere an ihr zuerst erkennen",
         background: "selection.png",
         paragraphs: [
-          "Die mittlere Figur braucht in der Auswahl keine eigene Bildschirmhälfte mehr. Ihr Name reicht, weil die Entscheidung jetzt über die Figur selbst statt über eine Bildzone getroffen wird.",
-          "Damit wirkt der Einstieg ruhiger und kontrollierter. Das Motiv bleibt zusammenhängend, während Demetria denselben Stellenwert wie die beiden anderen Namen erhält.",
-          "Sobald du Portraits oder Szenen für sie lieferst, kann dieser Abschnitt direkt auf eigene Hintergründe und Texte umgestellt werden."
+          "Demetria trägt sich mit einer Ruhe, die nicht weich wirkt. Es ist die Art von Haltung, die nicht um Zustimmung bittet und deshalb umso souveräner erscheint.",
+          "Wer sie zum ersten Mal erlebt, liest in ihr vielleicht Kühle, vielleicht Distanz, vielleicht sogar Strenge. Doch diese Oberfläche ist nicht leer. Sie ist schlicht sauber gezogen, frei von jeder unnötigen Geste.",
+          "Dadurch entsteht eine Figur, die weniger durch große Worte als durch Präzision wirkt. Nichts scheint zufällig, nichts fahrig, nichts dem Moment überlassen."
         ]
       },
       {
         id: "third",
         nav: "Darunter",
-        title: "Raum für ihre eigentliche Seite",
+        title: "Was unter der Stille Form annimmt",
         background: "selection.png",
         paragraphs: [
-          "Der dritte Reiter ist als Platz für den eigentlichen Kern von Demetria angelegt: das, was ihre Rolle trägt, bricht oder in ein anderes Licht setzt.",
-          "Technisch ist die Seite dafür bereits vollständig eingebunden. Farbwelt, Navigation, Dialoge, Audio und Kapitelwechsel funktionieren identisch zu den vorhandenen Charakteren.",
-          "Für den nächsten Schritt brauche ich nur noch ihre endgültigen Bilder, einen Musiktitel falls gewünscht und den Text, der ihre drei Abschnitte konkret füllt."
+          "Stille ist bei Demetria kein Mangel, sondern ein Werkzeug. Sie lässt Lücken, in denen andere sich selbst verraten, und sie spricht oft erst dann, wenn ein einziger Satz mehr Gewicht hat als jedes längere Gespräch.",
+          "Vielleicht liegt genau dort ihr eigentlicher Kern: nicht in offener Härte, sondern in einem kontrollierten Maß an Zurückhaltung, das schärfer sein kann als jede sichtbare Konfrontation.",
+          "So bleibt von ihr am Ende nicht bloß das Bild einer ruhigen Frau, sondern das Gefühl, dass hinter dieser Ruhe ein sehr wacher Wille steht, der sich nur selten vollständig zeigt."
         ]
       }
     ]
