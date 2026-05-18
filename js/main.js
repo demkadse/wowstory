@@ -45,44 +45,55 @@ const CHARACTER_CONFIG = {
   },
   demetria: {
     title: "Demetria",
-    titleLine: "Lorem Ipsum Dolor",
-    eyebrow: "Lorem ipsum dolor sit amet",
-    audioLabel: "Musik",
-    audioSource: "What They See.ogg",
+    titleLine: "Das Rascheln im Laub",
+    eyebrow: "Kriegerin, Gläubige und Wächterin zwischen alten Pfaden",
+    audioLabel: "Before the trees burned",
+    audioSource: "Before the trees burned.mp3",
     subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Demetria trägt den Klang alter Wälder und verlorener Heimat mit sich. In ihr begegnen sich Pflicht, Glaube, Sanftmut und die Härte jener Wege, die man allein vor allen anderen geht.",
     sections: [
       {
         id: "prolog",
         nav: "Prolog",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Was sie ist",
         background: "demetria_prolog.png",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          "Demetria erscheint zuerst als das, was sie immer war: eine Kriegerin ihres Volkes. Keine angenommene Rolle, keine bloße Fassade, sondern eine Haltung, gewachsen aus Herkunft, Disziplin und Erinnerung.",
+          "In ihr lebt die Sehnsucht nach den alten Tagen ihrer Jugend in den Straßen von Darnassus fort. Nicht nur als Schmerz über das Verlorene, sondern als Treue zu einem Leben, das einst selbstverständlich war.",
+          "Darum steht Demetria nie nur im Jetzt. In allem, was sie tut, klingt der Wille nach, nicht bloß zu überleben, sondern etwas von jener Welt zu bewahren, die sie bis heute nicht losgelassen hat."
         ]
       },
       {
         id: "second",
-        nav: "Lorem Ipsum",
-        title: "Consectetur Adipiscing Elit",
-        background: "demetria_forthepeople.png",
+        nav: "Eine Frau des Volkes",
+        title: "Mehr als nur Kriegerin",
+        background: "demetria_raw.png",
         paragraphs: [
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
-          "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos."
+          "Demetria ist nicht nur eine Kämpferin, sondern vor allem eine eigenständige, unabhängige Frau. Ihre Stärke liegt nicht allein im Kriegshandwerk, sondern ebenso in der Fähigkeit, ihr Leben mit klarem Willen selbst zu tragen.",
+          "Hinter der harten Kriegerin liegen weiche Seiten, Gefühle und Bedürfnisse, die ihrer Stärke nichts nehmen, sondern sie erst ganz machen. Gerade darin zeigt sich ihre wahre Natur.",
+          "Denn hinter aller Vorbereitung auf den Krieg steht für sie am Ende doch immer dieselbe Sehnsucht: die Hoffnung auf ein friedliches Leben, in dem Wachsamkeit nicht länger jede Stunde bestimmen muss."
         ]
       },
       {
         id: "third",
-        nav: "Dolor Amet",
-        title: "Magna Aliqua Enim",
+        nav: "Von Mond und Sternen",
+        title: "Ganz Elune ergeben",
         background: "demetria_prayer.png",
         paragraphs: [
-          "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
-          "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-          "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
+          "Demetria ist eine zutiefst gläubige Frau. Elune ist für sie weder bloßes Symbol noch stiller Trost, sondern Gegenwart, Maßstab und Ursprung all dessen, woran sie sich innerlich ausrichtet.",
+          "Noch immer bewahrt sie uralte Bräuche zu Ehren der Göttin und hält an Riten fest, die älter sind als viele Reiche der Gegenwart. In ihnen liegen für sie Würde, Erinnerung und Bindung.",
+          "Und verlangte Elune es von ihr, würde Demetria ohne Zögern zum Instrument ihrer Rache werden. Gerade ihre Hingabe zeigt, dass Sanftmut und unerbittliche Konsequenz in ihr nebeneinander bestehen."
+        ]
+      },
+      {
+        id: "fourth",
+        nav: "Zwischen Leben und Tod",
+        title: "Späherin vor allen anderen",
+        background: "demetria_hunter.png",
+        paragraphs: [
+          "Demetria wurde vor allem als Späherin, Kundschafterin und Pionierin eingesetzt. Sie war es, die allen vorausging, um zu erkennen, ob der Weg sicher war, lange bevor andere folgen konnten.",
+          "Nicht selten führte sie das hinter feindliche Linien, in Regionen und unter Wesen, die man sie als Feinde zu betrachten lehrte. Doch Demetria selbst hat nie ganz verstanden, warum Verfeindung unausweichlich sein sollte.",
+          "Sie war stets bemüht, Leben zu wahren, auf beiden Seiten. Töten war für sie nie Selbstzweck und niemals erste Wahl. Wenn sie dazu gezwungen war, dann nur dort, wo sie keinen anderen Weg mehr sah."
         ]
       }
     ]
@@ -100,7 +111,7 @@ const CHARACTER_CONFIG = {
         id: "prolog",
         nav: "Prolog",
         title: 'Riff, die "Gewürzhändlerin"',
-        background: "iff_Prolog.png",
+        background: "riff_Prolog.png",
         paragraphs: [
           "Riff verkauft vielleicht Geschichten besser als Gewürze. Der Titel klingt harmlos, fast charmant. Nach Marktständen, Kisten, Tüchern und einer Frau, die überall ein wenig Ware kennt.",
           "Doch auch das ist nur die halbe Wahrheit. Hinter dem freundlichen Handelston steht keine bloße Händlerin, sondern eine Anhängerin der Defias.",
@@ -171,6 +182,9 @@ let activeDialog = null;
 let currentAudioLabel = "Musik";
 let activeBackgroundLayer = pageBackgroundPrimary;
 let inactiveBackgroundLayer = pageBackgroundSecondary;
+let sectionTransitionTimer = null;
+let backgroundTransitionTimer = null;
+let shellTransitionTimer = null;
 
 function hasOpenDialog() {
   return [legalOverlay, galleryOverlay, lightboxOverlay, audioConsent].some(
@@ -182,6 +196,31 @@ function getOpenDialog() {
   return [audioConsent, lightboxOverlay, galleryOverlay, legalOverlay].find(
     (overlay) => !overlay.classList.contains("hidden")
   ) || null;
+}
+
+function getAudioMimeType(sourcePath) {
+  if (sourcePath.endsWith(".mp3")) {
+    return "audio/mpeg";
+  }
+
+  if (sourcePath.endsWith(".ogg")) {
+    return "audio/ogg";
+  }
+
+  return "";
+}
+
+function startShellTransition(duration = 680) {
+  if (shellTransitionTimer) {
+    clearTimeout(shellTransitionTimer);
+  }
+
+  siteShell.classList.add("is-transitioning");
+
+  shellTransitionTimer = window.setTimeout(() => {
+    siteShell.classList.remove("is-transitioning");
+    shellTransitionTimer = null;
+  }, duration);
 }
 
 function updateAudioUi() {
@@ -256,6 +295,15 @@ function populateSections(config) {
 
   menuItems.forEach((item, index) => {
     const section = currentSections[index];
+
+    if (!section) {
+      item.hidden = true;
+      item.classList.remove("active");
+      item.textContent = "";
+      return;
+    }
+
+    item.hidden = false;
     item.dataset.target = section.id;
     item.setAttribute("aria-controls", section.id);
     item.textContent = section.nav;
@@ -266,7 +314,19 @@ function populateSections(config) {
     const heading = article.querySelector("h2");
     const contentBody = article.querySelector(".content-body");
 
+    if (!section) {
+      article.hidden = true;
+      article.classList.add("is-hidden");
+      article.classList.remove("active");
+      article.id = `unused-${index}`;
+      heading.textContent = "";
+      contentBody.replaceChildren();
+      return;
+    }
+
     article.id = section.id;
+    article.hidden = article.id !== "prolog";
+    article.classList.toggle("is-hidden", article.hidden);
     heading.textContent = section.title;
     contentBody.replaceChildren(
       ...section.paragraphs.map((paragraph) => {
@@ -280,6 +340,11 @@ function populateSections(config) {
 
 function setSectionBackground(imagePath) {
   if (!imagePath) {
+    if (backgroundTransitionTimer) {
+      clearTimeout(backgroundTransitionTimer);
+      backgroundTransitionTimer = null;
+    }
+
     activeBackgroundLayer.classList.remove("is-active");
     activeBackgroundLayer.style.backgroundImage = "";
     inactiveBackgroundLayer.classList.remove("is-active");
@@ -291,14 +356,30 @@ function setSectionBackground(imagePath) {
     return;
   }
 
-  inactiveBackgroundLayer.style.backgroundImage = `linear-gradient(180deg, rgba(4, 6, 10, 0.28), rgba(4, 6, 10, 0.28)), url("${imagePath}")`;
-  inactiveBackgroundLayer.classList.add("is-active");
-  activeBackgroundLayer.classList.remove("is-active");
-
+  const nextImage = new Image();
   const previousActive = activeBackgroundLayer;
-  activeBackgroundLayer = inactiveBackgroundLayer;
-  inactiveBackgroundLayer = previousActive;
-  inactiveBackgroundLayer.style.backgroundImage = "";
+  const nextLayer = inactiveBackgroundLayer;
+
+  nextImage.onload = () => {
+    if (backgroundTransitionTimer) {
+      clearTimeout(backgroundTransitionTimer);
+      backgroundTransitionTimer = null;
+    }
+
+    nextLayer.style.backgroundImage = `linear-gradient(180deg, rgba(4, 6, 10, 0.28), rgba(4, 6, 10, 0.28)), url("${imagePath}")`;
+    nextLayer.classList.add("is-active");
+    previousActive.classList.remove("is-active");
+
+    activeBackgroundLayer = nextLayer;
+    inactiveBackgroundLayer = previousActive;
+
+    backgroundTransitionTimer = window.setTimeout(() => {
+      inactiveBackgroundLayer.style.backgroundImage = "";
+      backgroundTransitionTimer = null;
+    }, 700);
+  };
+
+  nextImage.src = imagePath;
 }
 
 function setActiveSection(sectionId) {
@@ -310,16 +391,53 @@ function setActiveSection(sectionId) {
   }
 
   menuItems.forEach((item) => {
+    if (item.hidden) {
+      return;
+    }
+
     const isActive = item.dataset.target === nextSection.id;
     item.classList.toggle("active", isActive);
     item.setAttribute("aria-pressed", String(isActive));
   });
 
-  contentArticles.forEach((article) => {
-    const isActive = article.id === nextSection.id;
-    article.classList.toggle("active", isActive);
-    article.hidden = !isActive;
+  const nextArticle = contentArticles.find((article) => article.id === nextSection.id);
+  const currentArticle = contentArticles.find(
+    (article) => article.classList.contains("active") && article.id !== nextSection.id
+  );
+
+  if (!nextArticle) {
+    setSectionBackground(nextSection.background);
+    return;
+  }
+
+  startShellTransition();
+
+  if (sectionTransitionTimer) {
+    clearTimeout(sectionTransitionTimer);
+    sectionTransitionTimer = null;
+  }
+
+  if (currentArticle) {
+    currentArticle.classList.remove("active");
+  }
+
+  nextArticle.hidden = false;
+  nextArticle.classList.remove("is-hidden");
+
+  requestAnimationFrame(() => {
+    nextArticle.classList.add("active");
   });
+
+  sectionTransitionTimer = window.setTimeout(() => {
+    contentArticles.forEach((article) => {
+      const isActive = article.id === nextSection.id;
+      article.hidden = !isActive;
+      article.classList.toggle("is-hidden", !isActive);
+      article.classList.toggle("active", isActive);
+    });
+
+    sectionTransitionTimer = null;
+  }, 430);
 
   setSectionBackground(nextSection.background);
 }
@@ -377,11 +495,13 @@ function applyCharacter(characterKey) {
   renderGallery(config);
   audio.pause();
   audioSource.src = config.audioSource;
+  audioSource.type = getAudioMimeType(config.audioSource);
   audio.load();
   updateAudioUi();
 
   selectionScreen.classList.add("hidden");
   siteShell.classList.remove("hidden");
+  startShellTransition(760);
   setActiveSection("prolog");
   openDialog(audioConsent, audioToggle);
 }

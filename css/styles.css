@@ -64,6 +64,7 @@ body {
   background:
     radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 24%),
     linear-gradient(180deg, var(--bg), var(--bg-deep));
+  transition: color 620ms ease, background 620ms ease;
 }
 
 body.modal-open {
@@ -222,6 +223,24 @@ body[data-character="riff"] {
   min-height: 100vh;
 }
 
+.main-header,
+.menu,
+.content-box,
+.footer-actions,
+.audio-control {
+  transition: opacity 620ms ease, transform 620ms ease, filter 620ms ease;
+}
+
+.site-shell.is-transitioning .main-header,
+.site-shell.is-transitioning .menu,
+.site-shell.is-transitioning .content-box,
+.site-shell.is-transitioning .footer-actions,
+.site-shell.is-transitioning .audio-control {
+  opacity: 0.55;
+  transform: translateY(8px);
+  filter: blur(2px);
+}
+
 .page-background-layer {
   position: fixed;
   inset: 0;
@@ -229,7 +248,7 @@ body[data-character="riff"] {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0;
-  transition: opacity 420ms ease;
+  transition: opacity 620ms ease;
   z-index: -3;
 }
 
@@ -385,11 +404,18 @@ body[data-character="riff"] {
 }
 
 .content {
-  display: none;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 420ms ease, transform 420ms ease;
 }
 
 .content.active {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content.is-hidden {
+  display: none;
 }
 
 .content h2 {
@@ -697,6 +723,13 @@ body[data-character="riff"] {
 
   .selection-choice,
   .menu-item,
+  .content,
+  .main-header,
+  .menu,
+  .content-box,
+  .footer-actions,
+  .audio-control,
+  body,
   .page-background-layer,
   .glow {
     transition: none;

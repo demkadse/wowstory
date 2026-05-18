@@ -21,7 +21,7 @@
       </button>
 
       <button class="selection-choice" type="button" data-character-choice="demetria">
-        <span class="selection-name">Demetria <span class="selection-note">(WIP)</span></span>
+        <span class="selection-name">Demetria <span class="selection-note">(Das Rascheln im Laub)</span></span>
       </button>
 
       <button class="selection-choice" type="button" data-character-choice="riff">
@@ -51,6 +51,7 @@
         <button class="menu-item active" type="button" data-target="prolog" aria-controls="prolog" aria-pressed="true"></button>
         <button class="menu-item" type="button" data-target="second" aria-controls="second" aria-pressed="false"></button>
         <button class="menu-item" type="button" data-target="third" aria-controls="third" aria-pressed="false"></button>
+        <button class="menu-item" type="button" data-target="fourth" aria-controls="fourth" aria-pressed="false" hidden></button>
         <button class="gallery-link" id="jumpToGallery" type="button" aria-haspopup="dialog" aria-controls="galleryOverlay" aria-expanded="false">Zur Galerie</button>
       </aside>
 
@@ -66,6 +67,11 @@
         </article>
 
         <article class="content" id="third" hidden>
+          <h2></h2>
+          <div class="content-body"></div>
+        </article>
+
+        <article class="content" id="fourth" hidden>
           <h2></h2>
           <div class="content-body"></div>
         </article>
@@ -85,7 +91,7 @@
     </div>
 
     <audio id="bgm" loop preload="metadata">
-      <source id="bgmSource" src="" type="audio/ogg">
+      <source id="bgmSource" src="" type="">
     </audio>
   </div>
 
