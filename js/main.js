@@ -3,6 +3,9 @@ const CHARACTER_CONFIG = {
     title: "Vespekta",
     titleLine: "Die Arkanistin",
     eyebrow: "Falscher Titel, echte Felmacht",
+    tagline: "Sie tarnt Verderbnis als Haltung.",
+    quote: "Wer die Oberfläche bewundert, hat schon verloren.",
+    motif: "Maske, Eleganz, felgrüne Absicht",
     audioLabel: "What They See",
     audioSource: "What They See.ogg",
     subtitle:
@@ -11,8 +14,14 @@ const CHARACTER_CONFIG = {
       {
         id: "prolog",
         nav: "Prolog",
+        menuNote: "Der erste Blick lügt am elegantesten.",
+        label: "Erstes Kapitel",
         title: "Vespekta, die Arkanistin",
+        lead:
+          "Ihr Name klingt nach geordnetem Wissen und kühler Präzision. Gerade deshalb ist er das perfekte Versteck.",
         background: "vespekta_Prolog.png",
+        galleryTitle: "Silberne Behauptung",
+        galleryCaption: "Die Pose verspricht Disziplin, doch unter der Fassung glimmt längst ein anderes Licht.",
         paragraphs: [
           "Auf den ersten Blick klingt der Titel nach Disziplin, Berechnung und geordnetem Wissen. Nach einer Frau, die das Arkane seziert, benennt und bis ins letzte Detail beherrscht.",
           "Doch gerade darin liegt der Witz. Vespekta ist keine Arkanistin. Der Name ist eine Fassade, ein sorgfältig gewählter Schleier über etwas deutlich Gefährlicherem.",
@@ -22,8 +31,14 @@ const CHARACTER_CONFIG = {
       {
         id: "second",
         nav: "Die Fassade",
+        menuNote: "Kontrolle beginnt beim ersten Irrtum.",
+        label: "Zweites Kapitel",
         title: "Die Kunst des falschen Eindrucks",
+        lead:
+          "Vespekta lebt nicht von roher Entlarvung, sondern von der Eleganz, mit der andere ihren Irrtum freiwillig wählen.",
         background: "vespekta_Fassade.png",
+        galleryTitle: "Die kultivierte Maske",
+        galleryCaption: "Jede höfliche Geste ist Teil einer Inszenierung, die Stärke nicht zeigt, sondern dosiert.",
         paragraphs: [
           "Vespekta lebt von der ersten Annahme anderer Leute. Wer nur hört, was ihr Titel verspricht, unterschätzt sie bereits im ersten Moment.",
           "Die Eleganz ist echt, die Ruhe ebenfalls. Aber beides dient nicht der Beruhigung, sondern der Kontrolle. Jede Geste scheint höflich, bis man bemerkt, dass sie das Gespräch längst besitzt.",
@@ -33,8 +48,14 @@ const CHARACTER_CONFIG = {
       {
         id: "third",
         nav: "Felgrün",
+        menuNote: "Unter der Ordnung wächst die Verführung.",
+        label: "Drittes Kapitel",
         title: "Was wirklich unter Silber brennt",
+        lead:
+          "Nicht das Arkane definiert sie, sondern die bewusste Entscheidung für eine Macht, die schöner wirkt, je falscher man sie benennt.",
         background: "vespekta_Felgrün.png",
+        galleryTitle: "Geständnis in Grün",
+        galleryCaption: "Hier endet die Zurückhaltung. Die Farbe selbst wird zum Bekenntnis.",
         paragraphs: [
           "Wo andere kalte arkanistische Präzision erwarten, antwortet Vespekta mit felgetränkter Entschlossenheit. Ihre Macht leuchtet nicht blau, sondern grün. Nicht sauber, sondern verführerisch.",
           "Gerade dieser Kontrast trägt die Seite: Silber als Bühne, Felgrün als Geständnis. Ordnung an der Oberfläche, Verderbnis als bewusste Entscheidung darunter.",
@@ -47,6 +68,9 @@ const CHARACTER_CONFIG = {
     title: "Demetria",
     titleLine: "Das Rascheln im Laub",
     eyebrow: "Kriegerin, Gläubige und Wächterin zwischen alten Pfaden",
+    tagline: "Ihre Milde ist alt. Ihre Entschlossenheit älter.",
+    quote: "Sie kniet vor Elune, aber nie vor der Finsternis.",
+    motif: "Mondlicht, Heimat, pflichtbewahrte Zärtlichkeit",
     audioLabel: "Before the trees burned",
     audioSource: "Before the trees burned.mp3",
     subtitle:
@@ -55,8 +79,14 @@ const CHARACTER_CONFIG = {
       {
         id: "prolog",
         nav: "Prolog",
+        menuNote: "Nicht Maske, sondern gewachsene Würde.",
+        label: "Erstes Kapitel",
         title: "Was sie ist",
+        lead:
+          "Demetria muss nichts vortäuschen. Ihre Kraft kommt aus Herkunft, gelebter Pflicht und Erinnerung, die nicht vergeht.",
         background: "demetria_prolog.png",
+        galleryTitle: "Die alte Treue",
+        galleryCaption: "Sie wirkt wie eine Überlebende, spricht aber wie jemand, der den verlorenen Ort noch immer in sich trägt.",
         paragraphs: [
           "Demetria erscheint zuerst als das, was sie immer war: eine Kriegerin ihres Volkes. Keine angenommene Rolle, keine bloße Fassade, sondern eine Haltung, gewachsen aus Herkunft, Disziplin und Erinnerung.",
           "In ihr lebt die Sehnsucht nach den alten Tagen ihrer Jugend in den Straßen von Darnassus fort. Nicht nur als Schmerz über das Verlorene, sondern als Treue zu einem Leben, das einst selbstverständlich war.",
@@ -65,9 +95,15 @@ const CHARACTER_CONFIG = {
       },
       {
         id: "second",
-        nav: "Eine Frau des Volkes",
+        nav: "Volk und Herz",
+        menuNote: "Stärke ohne Verhärtung.",
+        label: "Zweites Kapitel",
         title: "Mehr als nur Kriegerin",
+        lead:
+          "Hinter der Kriegerin steht eine Frau, deren Sanftheit keine Schwäche, sondern eine zweite Form von Standhaftigkeit ist.",
         background: "demetria_raw.png",
+        galleryTitle: "Die unverhärtete Kraft",
+        galleryCaption: "Nicht jede Entschlossenheit braucht Kälte. Manche hält sich gerade durch Mitgefühl.",
         paragraphs: [
           "Demetria ist nicht nur eine Kämpferin, sondern vor allem eine eigenständige, unabhängige Frau. Ihre Stärke liegt nicht allein im Kriegshandwerk, sondern ebenso in der Fähigkeit, ihr Leben mit klarem Willen selbst zu tragen.",
           "Hinter der harten Kriegerin liegen weiche Seiten, Gefühle und Bedürfnisse, die ihrer Stärke nichts nehmen, sondern sie erst ganz machen. Gerade darin zeigt sich ihre wahre Natur.",
@@ -77,8 +113,14 @@ const CHARACTER_CONFIG = {
       {
         id: "third",
         nav: "Von Mond und Sternen",
+        menuNote: "Glaube als Maßstab, nicht als Schmuck.",
+        label: "Drittes Kapitel",
         title: "Ganz Elune ergeben",
+        lead:
+          "Ihr Glaube ist keine Kulisse. Er formt Blick, Haltung und jene Grenze, hinter der Sanftmut in unerbittliche Konsequenz umschlagen kann.",
         background: "demetria_prayer.png",
+        galleryTitle: "Mondgebet",
+        galleryCaption: "Andacht bedeutet hier nicht Rückzug, sondern Rückbindung an etwas Größeres als den Verlust.",
         paragraphs: [
           "Demetria ist eine zutiefst gläubige Frau. Elune ist für sie weder bloßes Symbol noch stiller Trost, sondern Gegenwart, Maßstab und Ursprung all dessen, woran sie sich innerlich ausrichtet.",
           "Noch immer bewahrt sie uralte Bräuche zu Ehren der Göttin und hält an Riten fest, die älter sind als viele Reiche der Gegenwart. In ihnen liegen für sie Würde, Erinnerung und Bindung.",
@@ -87,9 +129,15 @@ const CHARACTER_CONFIG = {
       },
       {
         id: "fourth",
-        nav: "Zwischen Leben und Tod",
+        nav: "Vor allen anderen",
+        menuNote: "Die erste auf dem Pfad, die letzte im Urteil.",
+        label: "Viertes Kapitel",
         title: "Späherin vor allen anderen",
+        lead:
+          "Demetria wurde dorthin geschickt, wo Zweifel tödlich und Vorurteile bequem gewesen wären. Gerade dort blieb sie ihrem Maß treu.",
         background: "demetria_hunter.png",
+        galleryTitle: "Die erste Spur",
+        galleryCaption: "Wer vorausgeht, begegnet nicht nur Gefahr, sondern auch der Wahrheit hinter den Feindbildern.",
         paragraphs: [
           "Demetria wurde vor allem als Späherin, Kundschafterin und Pionierin eingesetzt. Sie war es, die allen vorausging, um zu erkennen, ob der Weg sicher war, lange bevor andere folgen konnten.",
           "Nicht selten führte sie das hinter feindliche Linien, in Regionen und unter Wesen, die man sie als Feinde zu betrachten lehrte. Doch Demetria selbst hat nie ganz verstanden, warum Verfeindung unausweichlich sein sollte.",
@@ -102,6 +150,9 @@ const CHARACTER_CONFIG = {
     title: "Riff",
     titleLine: 'Die "Gewürzhändlerin"',
     eyebrow: "Silber, Defiasrot und schlechtes Gewissen für andere",
+    tagline: "Sie verkauft Verlässlichkeit und meint Loyalität.",
+    quote: "Ein sauber geführtes Register kann gefährlicher sein als ein gezogenes Messer.",
+    motif: "rote Tücher, Marktgeruch, kalkulierte Nähe",
     audioLabel: "Die Bruderschaft",
     audioSource: "Die Bruderschaft.ogg",
     subtitle:
@@ -110,8 +161,14 @@ const CHARACTER_CONFIG = {
       {
         id: "prolog",
         nav: "Prolog",
+        menuNote: "Der Charme ist echt. Die Absicht nicht harmlos.",
+        label: "Erstes Kapitel",
         title: 'Riff, die "Gewürzhändlerin"',
+        lead:
+          "Sie wirkt wie Markt, Gewohnheit und ein freundlicher Ruf zwischen Kisten. Genau darin liegt ihre Stärke.",
         background: "riff_Prolog.png",
+        galleryTitle: "Die harmlose Rolle",
+        galleryCaption: "Ein Gesicht, das Vertrauen schneller gewinnt, als Fragen entstehen können.",
         paragraphs: [
           "Riff verkauft vielleicht Geschichten besser als Gewürze. Der Titel klingt harmlos, fast charmant. Nach Marktständen, Kisten, Tüchern und einer Frau, die überall ein wenig Ware kennt.",
           "Doch auch das ist nur die halbe Wahrheit. Hinter dem freundlichen Handelston steht keine bloße Händlerin, sondern eine Anhängerin der Defias.",
@@ -121,8 +178,14 @@ const CHARACTER_CONFIG = {
       {
         id: "second",
         nav: "Die Tarnung",
+        menuNote: "Eine gute Rolle riecht nach Alltag.",
+        label: "Zweites Kapitel",
         title: "Zwischen Marktruf und Messergriff",
+        lead:
+          "Riffs Tarnung lebt nicht von Unsichtbarkeit, sondern von Dichte: zu viele plausible Details, um sofort zu misstrauen.",
         background: "riff_Tarnung.png",
+        galleryTitle: "Alltag als Versteck",
+        galleryCaption: "Kisten, Listen, Lieferungen: das Vokabular der Harmlosigkeit wird zur Waffe.",
         paragraphs: [
           "Riffs Stärke liegt nicht darin, unauffällig zu sein, sondern glaubwürdig. Eine gute Tarnung wirkt nicht leer, sondern mit Leben gefüllt. Genau deshalb funktioniert die Gewürzhändlerin.",
           "Sie bringt Farbe, Gespräch und eine plausible Herkunft mit. Kisten, Listen, Lieferungen. Alles wirkt alltäglich genug, um keine Fragen zu provozieren.",
@@ -132,8 +195,14 @@ const CHARACTER_CONFIG = {
       {
         id: "third",
         nav: "Defiasrot",
+        menuNote: "Farbe als Schwur.",
+        label: "Drittes Kapitel",
         title: "Die Farbe der Zugehörigkeit",
+        lead:
+          "Rot ist bei Riff kein Akzent, sondern Bekenntnis. Es markiert Haltung, Nähe und die Bereitschaft, sich einer anderen Ordnung zu verschreiben.",
         background: "riff_Defiasrot.png",
+        galleryTitle: "Das rote Versprechen",
+        galleryCaption: "Wenn die Tarnung aufreißt, bleibt zuerst die Farbe und dann die Entscheidung dahinter.",
         paragraphs: [
           "Für Riff ist Rot keine bloße Akzentfarbe. Es ist ein Versprechen. Es markiert Nähe zur Defias, zu Aufbegehren, Schattenwirtschaft und einer Ordnung jenseits offizieller Regeln.",
           "Silber hält die Seite kühl und scharf, Defiasrot setzt den Stachel. Gemeinsam ergeben beide eine Stimmung aus Stil, Gefahr und kalkulierter Reibung.",
@@ -163,8 +232,14 @@ const characterEyebrow = document.getElementById("characterEyebrow");
 const characterTitle = document.getElementById("characterTitle");
 const characterTitleLine = document.getElementById("characterTitleLine");
 const characterSubtitle = document.getElementById("characterSubtitle");
+const characterTagline = document.getElementById("characterTagline");
+const characterQuote = document.getElementById("characterQuote");
+const characterMotif = document.getElementById("characterMotif");
+const activeSectionLabel = document.getElementById("activeSectionLabel");
+const activeSectionNav = document.getElementById("activeSectionNav");
 const galleryGrid = document.getElementById("galleryGrid");
 const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
 const audio = document.getElementById("bgm");
 const audioSource = document.getElementById("bgmSource");
 const audioToggle = document.getElementById("audioToggle");
@@ -275,6 +350,7 @@ function closeDialog(dialog) {
   if (dialog === lightboxOverlay) {
     lightboxImage.src = "";
     lightboxImage.alt = "";
+    lightboxCaption.textContent = "";
   }
 
   if (dialog === audioConsent && !siteShell.classList.contains("hidden")) {
@@ -288,6 +364,20 @@ function closeDialog(dialog) {
   if (returnFocusId && dialog !== audioConsent) {
     document.getElementById(returnFocusId)?.focus();
   }
+}
+
+function setMenuItemContent(item, section) {
+  item.replaceChildren();
+
+  const label = document.createElement("span");
+  label.className = "menu-item-label";
+  label.textContent = section.nav;
+
+  const note = document.createElement("span");
+  note.className = "menu-item-subtitle";
+  note.textContent = section.menuNote || section.lead || "";
+
+  item.append(label, note);
 }
 
 function populateSections(config) {
@@ -306,12 +396,14 @@ function populateSections(config) {
     item.hidden = false;
     item.dataset.target = section.id;
     item.setAttribute("aria-controls", section.id);
-    item.textContent = section.nav;
+    item.setAttribute("aria-pressed", String(section.id === "prolog"));
+    setMenuItemContent(item, section);
   });
 
   contentArticles.forEach((article, index) => {
     const section = currentSections[index];
     const heading = article.querySelector("h2");
+    const lead = article.querySelector(".content-lead");
     const contentBody = article.querySelector(".content-body");
 
     if (!section) {
@@ -320,6 +412,7 @@ function populateSections(config) {
       article.classList.remove("active");
       article.id = `unused-${index}`;
       heading.textContent = "";
+      lead.textContent = "";
       contentBody.replaceChildren();
       return;
     }
@@ -327,7 +420,9 @@ function populateSections(config) {
     article.id = section.id;
     article.hidden = article.id !== "prolog";
     article.classList.toggle("is-hidden", article.hidden);
+    article.classList.toggle("active", !article.hidden);
     heading.textContent = section.title;
+    lead.textContent = section.lead || "";
     contentBody.replaceChildren(
       ...section.paragraphs.map((paragraph) => {
         const paragraphElement = document.createElement("p");
@@ -366,7 +461,7 @@ function setSectionBackground(imagePath) {
       backgroundTransitionTimer = null;
     }
 
-    nextLayer.style.backgroundImage = `linear-gradient(180deg, rgba(4, 6, 10, 0.28), rgba(4, 6, 10, 0.28)), url("${imagePath}")`;
+    nextLayer.style.backgroundImage = `linear-gradient(180deg, rgba(4, 6, 10, 0.32), rgba(4, 6, 10, 0.48)), url("${imagePath}")`;
     nextLayer.classList.add("is-active");
     previousActive.classList.remove("is-active");
 
@@ -389,6 +484,9 @@ function setActiveSection(sectionId) {
   if (!nextSection) {
     return;
   }
+
+  activeSectionLabel.textContent = nextSection.label || "Kapitel";
+  activeSectionNav.textContent = nextSection.nav;
 
   menuItems.forEach((item) => {
     if (item.hidden) {
@@ -444,15 +542,8 @@ function setActiveSection(sectionId) {
 
 function renderGallery(config) {
   galleryGrid.replaceChildren();
-  const uniqueBackgrounds = Array.from(
-    new Set(
-      config.sections
-        .map((section) => section.background)
-        .filter((background) => typeof background === "string" && background.length > 0)
-    )
-  );
 
-  if (uniqueBackgrounds.length === 0) {
+  if (config.sections.length === 0) {
     const emptyState = document.createElement("p");
     emptyState.className = "gallery-empty";
     emptyState.textContent = "Weitere Eindrücke folgen.";
@@ -460,24 +551,49 @@ function renderGallery(config) {
     return;
   }
 
-  uniqueBackgrounds.forEach((background, index) => {
+  config.sections.forEach((section, index) => {
+    if (!section.background) {
+      return;
+    }
+
     const figure = document.createElement("figure");
     figure.className = "gallery-card";
 
     const image = document.createElement("img");
     image.className = "gallery-image";
-    image.src = background;
-    image.alt = `${config.title} Galerie ${index + 1}`;
+    image.src = section.background;
+    image.alt = `${config.title}: ${section.galleryTitle || section.title}`;
     image.loading = "lazy";
+
+    const meta = document.createElement("figcaption");
+    meta.className = "gallery-meta";
+
+    const title = document.createElement("p");
+    title.className = "gallery-title";
+    title.textContent = section.galleryTitle || section.title;
+
+    const caption = document.createElement("p");
+    caption.className = "gallery-caption";
+    caption.textContent = section.galleryCaption || section.lead || `Ein Blick auf ${config.title}.`;
+
     image.addEventListener("click", () => {
-      lightboxImage.src = background;
+      lightboxImage.src = section.background;
       lightboxImage.alt = image.alt;
+      lightboxCaption.textContent = caption.textContent;
       openDialog(lightboxOverlay, jumpToGalleryButton);
     });
 
-    figure.append(image);
+    meta.append(title, caption);
+    figure.append(image, meta);
     galleryGrid.append(figure);
   });
+
+  if (!galleryGrid.children.length) {
+    const emptyState = document.createElement("p");
+    emptyState.className = "gallery-empty";
+    emptyState.textContent = "Weitere Eindrücke folgen.";
+    galleryGrid.append(emptyState);
+  }
 }
 
 function applyCharacter(characterKey) {
@@ -489,7 +605,11 @@ function applyCharacter(characterKey) {
   characterTitle.textContent = config.title;
   characterTitleLine.textContent = config.titleLine;
   characterSubtitle.textContent = config.subtitle;
+  characterTagline.textContent = config.tagline;
+  characterQuote.querySelector("p").textContent = config.quote;
+  characterMotif.textContent = config.motif;
   currentAudioLabel = config.audioLabel;
+  document.title = `${config.title} | Wowstory`;
 
   populateSections(config);
   renderGallery(config);
@@ -513,6 +633,7 @@ function openSelectionScreen() {
   closeDialog(audioConsent);
   currentCharacter = null;
   body.dataset.character = "none";
+  document.title = "Vespekta | Demetria | Riff";
   audio.pause();
   updateAudioUi();
   setSectionBackground("");

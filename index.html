@@ -12,22 +12,42 @@
   <div class="selection-screen" id="selectionScreen" aria-labelledby="selectionTitle">
     <div class="selection-backdrop" aria-hidden="true"></div>
     <div class="selection-veil" aria-hidden="true"></div>
+    <div class="selection-atmosphere" aria-hidden="true">
+      <div class="selection-orb selection-orb-left"></div>
+      <div class="selection-orb selection-orb-right"></div>
+    </div>
 
-    <h1 id="selectionTitle" class="sr-only">Charakterauswahl</h1>
+    <section class="selection-panel">
+      <p class="selection-kicker">Chroniken im Schatten</p>
+      <h1 id="selectionTitle">Wähle die Stimme der Geschichte</h1>
+      <p class="selection-intro">
+        Drei Leben, drei Fassaden, drei Arten von Macht. Jede Spur führt in eine andere
+        Richtung und verbirgt unter Stil, Glaube oder Handel etwas Gefährlicheres.
+      </p>
 
-    <nav class="selection-list" aria-label="Charaktere">
-      <button class="selection-choice" type="button" data-character-choice="vespekta">
-        <span class="selection-name">Vespekta</span>
-      </button>
+      <nav class="selection-list" aria-label="Charaktere">
+        <button class="selection-choice" type="button" data-character-choice="vespekta">
+          <span class="selection-index">I</span>
+          <span class="selection-name">Vespekta</span>
+          <span class="selection-role">Die falsche Arkanistin</span>
+          <span class="selection-line">Silber auf der Zunge. Felgrün unter der Haut.</span>
+        </button>
 
-      <button class="selection-choice" type="button" data-character-choice="demetria">
-        <span class="selection-name">Demetria</span>
-      </button>
+        <button class="selection-choice" type="button" data-character-choice="demetria">
+          <span class="selection-index">II</span>
+          <span class="selection-name">Demetria</span>
+          <span class="selection-role">Wächterin verlorener Pfade</span>
+          <span class="selection-line">Andacht, Erinnerung und eine Klinge für Elune.</span>
+        </button>
 
-      <button class="selection-choice" type="button" data-character-choice="riff">
-        <span class="selection-name">Riff</span>
-      </button>
-    </nav>
+        <button class="selection-choice" type="button" data-character-choice="riff">
+          <span class="selection-index">III</span>
+          <span class="selection-name">Riff</span>
+          <span class="selection-role">Die rote Händlerin</span>
+          <span class="selection-line">Freundliches Lächeln, saubere Listen, schmutzige Loyalität.</span>
+        </button>
+      </nav>
+    </section>
   </div>
 
   <div class="site-shell hidden" id="siteShell">
@@ -40,39 +60,71 @@
     </div>
 
     <header class="main-header">
-      <p class="eyebrow" id="characterEyebrow">Fassade und wahre Natur</p>
-      <h1 id="characterTitle">Vespekta</h1>
-      <p class="character-titleline" id="characterTitleLine">Die Arkanistin</p>
-      <p class="subtitle" id="characterSubtitle">Zwischen Silberglanz und Felgrün zeigt sich eine Macht, die lieber missverstanden als unterschätzt wird.</p>
+      <div class="hero-frame">
+        <div class="hero-copy">
+          <p class="eyebrow" id="characterEyebrow">Fassade und wahre Natur</p>
+          <h1 id="characterTitle">Vespekta</h1>
+          <p class="character-titleline" id="characterTitleLine">Die Arkanistin</p>
+          <p class="subtitle" id="characterSubtitle">Zwischen Silberglanz und Felgrün zeigt sich eine Macht, die lieber missverstanden als unterschätzt wird.</p>
+        </div>
+
+        <aside class="hero-aside" aria-label="Charakteressenz">
+          <p class="hero-tagline" id="characterTagline">Sie tarnt Verderbnis als Haltung.</p>
+          <blockquote class="hero-quote" id="characterQuote">
+            <p>Wer die Oberfläche bewundert, hat schon verloren.</p>
+          </blockquote>
+          <div class="hero-details">
+            <p class="detail-label">Leitmotiv</p>
+            <p class="detail-value" id="characterMotif">Maske, Eleganz, felgrüne Absicht</p>
+          </div>
+        </aside>
+      </div>
     </header>
 
     <main class="layout">
-      <aside class="menu" aria-label="Kapitel">
-        <button class="menu-item active" type="button" data-target="prolog" aria-controls="prolog" aria-pressed="true"></button>
-        <button class="menu-item" type="button" data-target="second" aria-controls="second" aria-pressed="false"></button>
-        <button class="menu-item" type="button" data-target="third" aria-controls="third" aria-pressed="false"></button>
-        <button class="menu-item" type="button" data-target="fourth" aria-controls="fourth" aria-pressed="false" hidden></button>
-        <button class="gallery-link" id="jumpToGallery" type="button" aria-haspopup="dialog" aria-controls="galleryOverlay" aria-expanded="false">Zur Galerie</button>
+      <aside class="menu-panel">
+        <div class="menu-copy">
+          <p class="menu-kicker">Kapitel</p>
+          <h2 class="menu-title">Pfad durch die Chronik</h2>
+          <p class="menu-description">Jeder Abschnitt beleuchtet eine andere Schicht der Figur: Rolle, Bruch, Wahrheit.</p>
+        </div>
+
+        <aside class="menu" aria-label="Kapitel">
+          <button class="menu-item active" type="button" data-target="prolog" aria-controls="prolog" aria-pressed="true"></button>
+          <button class="menu-item" type="button" data-target="second" aria-controls="second" aria-pressed="false"></button>
+          <button class="menu-item" type="button" data-target="third" aria-controls="third" aria-pressed="false"></button>
+          <button class="menu-item" type="button" data-target="fourth" aria-controls="fourth" aria-pressed="false" hidden></button>
+          <button class="gallery-link" id="jumpToGallery" type="button" aria-haspopup="dialog" aria-controls="galleryOverlay" aria-expanded="false">Zur Galerie</button>
+        </aside>
       </aside>
 
-      <section class="content-box" aria-live="polite">
+      <section class="content-box">
+        <div class="content-head">
+          <p class="content-kicker" id="activeSectionLabel">Erstes Kapitel</p>
+          <p class="content-rule" id="activeSectionNav">Prolog</p>
+        </div>
+
         <article class="content active" id="prolog">
           <h2></h2>
+          <p class="content-lead"></p>
           <div class="content-body"></div>
         </article>
 
         <article class="content" id="second" hidden>
           <h2></h2>
+          <p class="content-lead"></p>
           <div class="content-body"></div>
         </article>
 
         <article class="content" id="third" hidden>
           <h2></h2>
+          <p class="content-lead"></p>
           <div class="content-body"></div>
         </article>
 
         <article class="content" id="fourth" hidden>
           <h2></h2>
+          <p class="content-lead"></p>
           <div class="content-body"></div>
         </article>
       </section>
@@ -122,6 +174,7 @@
       <p class="dialog-kicker">Ansicht</p>
       <h2 id="lightboxTitle">Galeriebild</h2>
       <img id="lightboxImage" class="lightbox-image" src="" alt="">
+      <p id="lightboxCaption" class="lightbox-caption"></p>
     </div>
   </div>
 
