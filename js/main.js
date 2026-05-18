@@ -3,9 +3,6 @@ const CHARACTER_CONFIG = {
     title: "Vespekta",
     titleLine: "Die Arkanistin",
     eyebrow: "Falscher Titel, echte Felmacht",
-    tagline: "Sie tarnt Verderbnis als Haltung.",
-    quote: "Wer die Oberfläche bewundert, hat schon verloren.",
-    motif: "Maske, Eleganz, felgrüne Absicht",
     audioLabel: "What They See",
     audioSource: "What They See.ogg",
     subtitle:
@@ -68,9 +65,6 @@ const CHARACTER_CONFIG = {
     title: "Demetria",
     titleLine: "Das Rascheln im Laub",
     eyebrow: "Kriegerin, Gläubige und Wächterin zwischen alten Pfaden",
-    tagline: "Ihre Milde ist alt. Ihre Entschlossenheit älter.",
-    quote: "Sie kniet vor Elune, aber nie vor der Finsternis.",
-    motif: "Mondlicht, Heimat, pflichtbewahrte Zärtlichkeit",
     audioLabel: "Before the trees burned",
     audioSource: "Before the trees burned.mp3",
     subtitle:
@@ -150,9 +144,6 @@ const CHARACTER_CONFIG = {
     title: "Riff",
     titleLine: 'Die "Gewürzhändlerin"',
     eyebrow: "Silber, Defiasrot und schlechtes Gewissen für andere",
-    tagline: "Sie verkauft Verlässlichkeit und meint Loyalität.",
-    quote: "Ein sauber geführtes Register kann gefährlicher sein als ein gezogenes Messer.",
-    motif: "rote Tücher, Marktgeruch, kalkulierte Nähe",
     audioLabel: "Die Bruderschaft",
     audioSource: "Die Bruderschaft.ogg",
     subtitle:
@@ -232,11 +223,6 @@ const characterEyebrow = document.getElementById("characterEyebrow");
 const characterTitle = document.getElementById("characterTitle");
 const characterTitleLine = document.getElementById("characterTitleLine");
 const characterSubtitle = document.getElementById("characterSubtitle");
-const characterTagline = document.getElementById("characterTagline");
-const characterQuote = document.getElementById("characterQuote");
-const characterMotif = document.getElementById("characterMotif");
-const activeSectionLabel = document.getElementById("activeSectionLabel");
-const activeSectionNav = document.getElementById("activeSectionNav");
 const galleryGrid = document.getElementById("galleryGrid");
 const lightboxImage = document.getElementById("lightboxImage");
 const lightboxCaption = document.getElementById("lightboxCaption");
@@ -485,9 +471,6 @@ function setActiveSection(sectionId) {
     return;
   }
 
-  activeSectionLabel.textContent = nextSection.label || "Kapitel";
-  activeSectionNav.textContent = nextSection.nav;
-
   menuItems.forEach((item) => {
     if (item.hidden) {
       return;
@@ -605,9 +588,6 @@ function applyCharacter(characterKey) {
   characterTitle.textContent = config.title;
   characterTitleLine.textContent = config.titleLine;
   characterSubtitle.textContent = config.subtitle;
-  characterTagline.textContent = config.tagline;
-  characterQuote.querySelector("p").textContent = config.quote;
-  characterMotif.textContent = config.motif;
   currentAudioLabel = config.audioLabel;
   document.title = `${config.title} | Wowstory`;
 
