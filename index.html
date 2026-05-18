@@ -13,31 +13,21 @@
     <div class="selection-backdrop" aria-hidden="true"></div>
     <div class="selection-veil" aria-hidden="true"></div>
 
-    <div class="selection-stage">
-      <p class="selection-kicker">Charakterauswahl</p>
-      <h1 id="selectionTitle">Wähle den Namen und folge der Geschichte</h1>
-      <p class="selection-intro">Das Bild bleibt eine Bühne. Der Einstieg führt jetzt über die Namen der drei Figuren.</p>
+    <h1 id="selectionTitle" class="sr-only">Charakterauswahl</h1>
 
-      <div class="selection-list" role="list" aria-label="Charaktere">
-        <button class="selection-choice" type="button" data-character-choice="vespekta">
-          <span class="selection-label">Silber und Felgrün</span>
-          <span class="selection-name">Vespekta</span>
-          <span class="selection-title">Die Arkanistin</span>
-        </button>
+    <nav class="selection-list" aria-label="Charaktere">
+      <button class="selection-choice" type="button" data-character-choice="vespekta">
+        <span class="selection-name">Vespekta</span>
+      </button>
 
-        <button class="selection-choice" type="button" data-character-choice="demetria">
-          <span class="selection-label">Die Mitte</span>
-          <span class="selection-name">Demetria</span>
-          <span class="selection-title">Die dritte Stimme</span>
-        </button>
+      <button class="selection-choice" type="button" data-character-choice="demetria">
+        <span class="selection-name">Demetria <span class="selection-note">(WIP)</span></span>
+      </button>
 
-        <button class="selection-choice" type="button" data-character-choice="riff">
-          <span class="selection-label">Silber und Defiasrot</span>
-          <span class="selection-name">Riff</span>
-          <span class="selection-title">Die "Gewürzhändlerin"</span>
-        </button>
-      </div>
-    </div>
+      <button class="selection-choice" type="button" data-character-choice="riff">
+        <span class="selection-name">Riff</span>
+      </button>
+    </nav>
   </div>
 
   <div class="site-shell hidden" id="siteShell">
@@ -117,6 +107,15 @@
       <div id="galleryGrid" class="gallery-grid" aria-live="polite">
         <p class="gallery-empty">Weitere Eindrücke folgen.</p>
       </div>
+    </div>
+  </div>
+
+  <div id="lightboxOverlay" class="dialog-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-hidden="true">
+    <div class="dialog-card dialog-card-lightbox">
+      <button id="closeLightboxOverlay" class="close-btn" type="button" aria-label="Bild schließen">&#10005;</button>
+      <p class="dialog-kicker">Ansicht</p>
+      <h2 id="lightboxTitle">Galeriebild</h2>
+      <img id="lightboxImage" class="lightbox-image" src="" alt="">
     </div>
   </div>
 

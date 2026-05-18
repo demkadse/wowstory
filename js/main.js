@@ -45,44 +45,44 @@ const CHARACTER_CONFIG = {
   },
   demetria: {
     title: "Demetria",
-    titleLine: "Die Schweigende mit dem klaren Blick",
-    eyebrow: "Zwischen Haltung, Distanz und dem, was nie laut werden muss",
+    titleLine: "Lorem Ipsum Dolor",
+    eyebrow: "Lorem ipsum dolor sit amet",
     audioLabel: "Musik",
     audioSource: "What They See.ogg",
     subtitle:
-      "Demetria wirkt nicht wie ein Zwischenraum, sondern wie ein stiller Mittelpunkt. Ihre Präsenz entsteht nicht aus Lautstärke, sondern aus Kontrolle, Präzision und dem Eindruck, dass sie immer einen Gedanken weiter ist.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     sections: [
       {
         id: "prolog",
         nav: "Prolog",
-        title: "Demetria, die Schweigende mit dem klaren Blick",
-        background: "selection.png",
+        title: "Lorem Ipsum Dolor Sit",
+        background: "demetria_prolog.png",
         paragraphs: [
-          "Demetria betritt keinen Raum, um ihn an sich zu reißen. Sie genügt sich darin, anwesend zu sein, bis andere von selbst vorsichtiger sprechen, gerader stehen oder ihre Worte neu ordnen.",
-          "Gerade darin liegt ihre Wirkung. Sie wirkt nicht dramatisch, nicht überladen, nicht bemüht geheimnisvoll. Alles an ihr deutet eher auf Disziplin als auf Inszenierung, eher auf Beobachtung als auf Bedürfnis nach Aufmerksamkeit.",
-          "Und doch bleibt nach dem ersten Eindruck sofort die Frage, was an ihr eigentlich so schwer zu greifen ist. Vielleicht, weil Demetria nie mehr zeigt, als sie im jeweiligen Moment zeigen will."
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         ]
       },
       {
         id: "second",
-        nav: "Die Haltung",
-        title: "Was andere an ihr zuerst erkennen",
-        background: "selection.png",
+        nav: "Lorem Ipsum",
+        title: "Consectetur Adipiscing Elit",
+        background: "demetria_forthepeople.png",
         paragraphs: [
-          "Demetria trägt sich mit einer Ruhe, die nicht weich wirkt. Es ist die Art von Haltung, die nicht um Zustimmung bittet und deshalb umso souveräner erscheint.",
-          "Wer sie zum ersten Mal erlebt, liest in ihr vielleicht Kühle, vielleicht Distanz, vielleicht sogar Strenge. Doch diese Oberfläche ist nicht leer. Sie ist schlicht sauber gezogen, frei von jeder unnötigen Geste.",
-          "Dadurch entsteht eine Figur, die weniger durch große Worte als durch Präzision wirkt. Nichts scheint zufällig, nichts fahrig, nichts dem Moment überlassen."
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+          "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos."
         ]
       },
       {
         id: "third",
-        nav: "Darunter",
-        title: "Was unter der Stille Form annimmt",
-        background: "selection.png",
+        nav: "Dolor Amet",
+        title: "Magna Aliqua Enim",
+        background: "demetria_prayer.png",
         paragraphs: [
-          "Stille ist bei Demetria kein Mangel, sondern ein Werkzeug. Sie lässt Lücken, in denen andere sich selbst verraten, und sie spricht oft erst dann, wenn ein einziger Satz mehr Gewicht hat als jedes längere Gespräch.",
-          "Vielleicht liegt genau dort ihr eigentlicher Kern: nicht in offener Härte, sondern in einem kontrollierten Maß an Zurückhaltung, das schärfer sein kann als jede sichtbare Konfrontation.",
-          "So bleibt von ihr am Ende nicht bloß das Bild einer ruhigen Frau, sondern das Gefühl, dass hinter dieser Ruhe ein sehr wacher Wille steht, der sich nur selten vollständig zeigt."
+          "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+          "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+          "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
         ]
       }
     ]
@@ -144,13 +144,16 @@ const openLegalButton = document.getElementById("openLegal");
 const closeLegalButton = document.getElementById("closeLegal");
 const jumpToGalleryButton = document.getElementById("jumpToGallery");
 const closeGalleryOverlayButton = document.getElementById("closeGalleryOverlay");
+const closeLightboxOverlayButton = document.getElementById("closeLightboxOverlay");
 const legalOverlay = document.getElementById("legalOverlay");
 const galleryOverlay = document.getElementById("galleryOverlay");
+const lightboxOverlay = document.getElementById("lightboxOverlay");
 const characterEyebrow = document.getElementById("characterEyebrow");
 const characterTitle = document.getElementById("characterTitle");
 const characterTitleLine = document.getElementById("characterTitleLine");
 const characterSubtitle = document.getElementById("characterSubtitle");
 const galleryGrid = document.getElementById("galleryGrid");
+const lightboxImage = document.getElementById("lightboxImage");
 const audio = document.getElementById("bgm");
 const audioSource = document.getElementById("bgmSource");
 const audioToggle = document.getElementById("audioToggle");
@@ -170,13 +173,13 @@ let activeBackgroundLayer = pageBackgroundPrimary;
 let inactiveBackgroundLayer = pageBackgroundSecondary;
 
 function hasOpenDialog() {
-  return [legalOverlay, galleryOverlay, audioConsent].some(
+  return [legalOverlay, galleryOverlay, lightboxOverlay, audioConsent].some(
     (overlay) => !overlay.classList.contains("hidden")
   );
 }
 
 function getOpenDialog() {
-  return [audioConsent, galleryOverlay, legalOverlay].find(
+  return [audioConsent, lightboxOverlay, galleryOverlay, legalOverlay].find(
     (overlay) => !overlay.classList.contains("hidden")
   ) || null;
 }
@@ -228,6 +231,11 @@ function closeDialog(dialog) {
 
   if (dialog === galleryOverlay) {
     jumpToGalleryButton.setAttribute("aria-expanded", "false");
+  }
+
+  if (dialog === lightboxOverlay) {
+    lightboxImage.src = "";
+    lightboxImage.alt = "";
   }
 
   if (dialog === audioConsent && !siteShell.classList.contains("hidden")) {
@@ -316,12 +324,42 @@ function setActiveSection(sectionId) {
   setSectionBackground(nextSection.background);
 }
 
-function renderGallery(_config) {
+function renderGallery(config) {
   galleryGrid.replaceChildren();
-  const emptyState = document.createElement("p");
-  emptyState.className = "gallery-empty";
-  emptyState.textContent = "Weitere Eindrücke folgen.";
-  galleryGrid.append(emptyState);
+  const uniqueBackgrounds = Array.from(
+    new Set(
+      config.sections
+        .map((section) => section.background)
+        .filter((background) => typeof background === "string" && background.length > 0)
+    )
+  );
+
+  if (uniqueBackgrounds.length === 0) {
+    const emptyState = document.createElement("p");
+    emptyState.className = "gallery-empty";
+    emptyState.textContent = "Weitere Eindrücke folgen.";
+    galleryGrid.append(emptyState);
+    return;
+  }
+
+  uniqueBackgrounds.forEach((background, index) => {
+    const figure = document.createElement("figure");
+    figure.className = "gallery-card";
+
+    const image = document.createElement("img");
+    image.className = "gallery-image";
+    image.src = background;
+    image.alt = `${config.title} Galerie ${index + 1}`;
+    image.loading = "lazy";
+    image.addEventListener("click", () => {
+      lightboxImage.src = background;
+      lightboxImage.alt = image.alt;
+      openDialog(lightboxOverlay, jumpToGalleryButton);
+    });
+
+    figure.append(image);
+    galleryGrid.append(figure);
+  });
 }
 
 function applyCharacter(characterKey) {
@@ -351,6 +389,7 @@ function applyCharacter(characterKey) {
 function openSelectionScreen() {
   closeDialog(legalOverlay);
   closeDialog(galleryOverlay);
+  closeDialog(lightboxOverlay);
   closeDialog(audioConsent);
   currentCharacter = null;
   body.dataset.character = "none";
@@ -418,6 +457,10 @@ closeGalleryOverlayButton.addEventListener("click", () => {
   closeDialog(galleryOverlay);
 });
 
+closeLightboxOverlayButton.addEventListener("click", () => {
+  closeDialog(lightboxOverlay);
+});
+
 audioToggle.addEventListener("click", async () => {
   if (audio.paused) {
     await playAudio();
@@ -444,7 +487,7 @@ declineAudioButton.addEventListener("click", () => {
   updateAudioUi();
 });
 
-[legalOverlay, galleryOverlay, audioConsent].forEach((overlay) => {
+[legalOverlay, galleryOverlay, lightboxOverlay, audioConsent].forEach((overlay) => {
   overlay.addEventListener("click", (event) => {
     if (event.target === overlay) {
       closeDialog(overlay);
