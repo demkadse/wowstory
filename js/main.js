@@ -11,7 +11,7 @@ const CHARACTER_CONFIG = {
       {
         id: "prolog",
         nav: "Prolog",
-        title: "Vespekta, Die Arkanistin",
+        title: "Vespekta, die Arkanistin",
         background: "vespekta_Prolog.png",
         paragraphs: [
           "Auf den ersten Blick klingt der Titel nach Disziplin, Berechnung und geordnetem Wissen. Nach einer Frau, die das Arkane seziert, benennt und bis ins letzte Detail beherrscht.",
@@ -39,6 +39,50 @@ const CHARACTER_CONFIG = {
           "Wo andere kalte arkanistische Präzision erwarten, antwortet Vespekta mit felgetränkter Entschlossenheit. Ihre Macht leuchtet nicht blau, sondern grün. Nicht sauber, sondern verführerisch.",
           "Gerade dieser Kontrast trägt die Seite: Silber als Bühne, Felgrün als Geständnis. Ordnung an der Oberfläche, Verderbnis als bewusste Entscheidung darunter.",
           "So entsteht das eigentliche Bild von Vespekta: nicht bloß eine Hexenmeisterin, sondern eine Frau, die ihre wahre Natur mit voller Absicht inszeniert."
+        ]
+      }
+    ]
+  },
+  demetria: {
+    title: "Demetria",
+    titleLine: "Die dritte Stimme",
+    eyebrow: "Neu im Reigen, bewusst in der Mitte",
+    audioLabel: "Musik",
+    audioSource: "What They See.ogg",
+    subtitle:
+      "Demetria steht jetzt als dritte Figur zwischen Vespekta und Riff und bekommt dieselbe erzählerische Bühne mit drei Reitern.",
+    sections: [
+      {
+        id: "prolog",
+        nav: "Prolog",
+        title: "Demetria, die dritte Stimme",
+        background: "selection.png",
+        paragraphs: [
+          "Demetria ist jetzt als eigener Einstieg gesetzt. Die Seite behandelt sie nicht mehr als Lücke zwischen zwei bestehenden Figuren, sondern als vollwertige dritte Präsenz.",
+          "Der Aufbau folgt bewusst demselben Rhythmus wie bei Vespekta und Riff: ein Prolog, ein Blick auf die sichtbare Rolle und ein dritter Reiter für das, was darunter liegt.",
+          "Solange du mir ihre finalen Assets und Texte gibst, bleibt diese Version ein sauberes Gerüst, das sich sofort weiter ausbauen lässt."
+        ]
+      },
+      {
+        id: "second",
+        nav: "Die Rolle",
+        title: "Was man zuerst von Demetria liest",
+        background: "selection.png",
+        paragraphs: [
+          "Die mittlere Figur braucht in der Auswahl keine eigene Bildschirmhälfte mehr. Ihr Name reicht, weil die Entscheidung jetzt über die Figur selbst statt über eine Bildzone getroffen wird.",
+          "Damit wirkt der Einstieg ruhiger und kontrollierter. Das Motiv bleibt zusammenhängend, während Demetria denselben Stellenwert wie die beiden anderen Namen erhält.",
+          "Sobald du Portraits oder Szenen für sie lieferst, kann dieser Abschnitt direkt auf eigene Hintergründe und Texte umgestellt werden."
+        ]
+      },
+      {
+        id: "third",
+        nav: "Darunter",
+        title: "Raum für ihre eigentliche Seite",
+        background: "selection.png",
+        paragraphs: [
+          "Der dritte Reiter ist als Platz für den eigentlichen Kern von Demetria angelegt: das, was ihre Rolle trägt, bricht oder in ein anderes Licht setzt.",
+          "Technisch ist die Seite dafür bereits vollständig eingebunden. Farbwelt, Navigation, Dialoge, Audio und Kapitelwechsel funktionieren identisch zu den vorhandenen Charakteren.",
+          "Für den nächsten Schritt brauche ich nur noch ihre endgültigen Bilder, einen Musiktitel falls gewünscht und den Text, der ihre drei Abschnitte konkret füllt."
         ]
       }
     ]
@@ -272,7 +316,7 @@ function setActiveSection(sectionId) {
   setSectionBackground(nextSection.background);
 }
 
-function renderGallery(config) {
+function renderGallery(_config) {
   galleryGrid.replaceChildren();
   const emptyState = document.createElement("p");
   emptyState.className = "gallery-empty";

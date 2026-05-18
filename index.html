@@ -3,31 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Charakterseiten für Vespekta und Riff zwischen Fassade, Intrige und gelebter Rolle.">
+  <meta name="description" content="Charakterseiten für Vespekta, Demetria und Riff zwischen Fassade, Intrige und gelebter Rolle.">
   <meta name="theme-color" content="#090b10">
-  <title>Vespekta | Riff</title>
+  <title>Vespekta | Demetria | Riff</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-character="none">
   <div class="selection-screen" id="selectionScreen" aria-labelledby="selectionTitle">
     <div class="selection-backdrop" aria-hidden="true"></div>
-    <div class="selection-panel selection-panel-vespekta">
-      <button class="selection-choice" type="button" data-character-choice="vespekta">
-        <span class="selection-label">Silber und Felgrün</span>
-        <span class="selection-name">Vespekta</span>
-        <span class="selection-title">Die Arkanistin</span>
-      </button>
-    </div>
+    <div class="selection-veil" aria-hidden="true"></div>
 
-    <div class="selection-panel selection-panel-riff">
-      <button class="selection-choice" type="button" data-character-choice="riff">
-        <span class="selection-label">Silber und Defiasrot</span>
-        <span class="selection-name">Riff</span>
-        <span class="selection-title">Die "Gewürzhändlerin"</span>
-      </button>
-    </div>
+    <div class="selection-stage">
+      <p class="selection-kicker">Charakterauswahl</p>
+      <h1 id="selectionTitle">Wähle den Namen und folge der Geschichte</h1>
+      <p class="selection-intro">Das Bild bleibt eine Bühne. Der Einstieg führt jetzt über die Namen der drei Figuren.</p>
 
-    <h1 id="selectionTitle" class="sr-only">Charakterauswahl</h1>
+      <div class="selection-list" role="list" aria-label="Charaktere">
+        <button class="selection-choice" type="button" data-character-choice="vespekta">
+          <span class="selection-label">Silber und Felgrün</span>
+          <span class="selection-name">Vespekta</span>
+          <span class="selection-title">Die Arkanistin</span>
+        </button>
+
+        <button class="selection-choice" type="button" data-character-choice="demetria">
+          <span class="selection-label">Die Mitte</span>
+          <span class="selection-name">Demetria</span>
+          <span class="selection-title">Die dritte Stimme</span>
+        </button>
+
+        <button class="selection-choice" type="button" data-character-choice="riff">
+          <span class="selection-label">Silber und Defiasrot</span>
+          <span class="selection-name">Riff</span>
+          <span class="selection-title">Die "Gewürzhändlerin"</span>
+        </button>
+      </div>
+    </div>
   </div>
 
   <div class="site-shell hidden" id="siteShell">
